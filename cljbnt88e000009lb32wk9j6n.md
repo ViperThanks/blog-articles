@@ -44,10 +44,6 @@ Java 人的面经 -&gt; DNS 和 CDN 的区别, 他们分别能干嘛? 不懂的�
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687710943347/5fb449e2-df0d-4666-9912-ae34aa98d7f4.png align="center")
 
-#### 步骤三, 去 pull 个 docker image 并且 run
-
-这里我选择 Nginx 然后端口映射 8888: 80 (Nignx 默认 80) 这句话的意思是本机的 8888 端口映射到 container 的 80 端口上
-
 以下是各种 DNS 记录类型的描述：
 
 | 记录类型 | 描述 |
@@ -59,6 +55,14 @@ Java 人的面经 -&gt; DNS 和 CDN 的区别, 他们分别能干嘛? 不懂的�
 | AAAA | 将域名映射到 IPv 6 地址 |
 | NS | 指定用于特定域名的域名服务器 |
 | ANAME | 提供动态解析功能，类似于 CNAME，但根据查询的 IP 地址返回结果 |
+
+#### 步骤三, 去 pull 个 docker image 并且 run
+
+这里我选择 Nginx 然后端口映射 8888: 80 (Nignx 默认 80) 这句话的意思是本机的 8888 端口映射到 container 的 80 端口上
+
+浏览器能访问就行了
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687868534228/08f6b7b2-ad6b-4b0e-8b4c-21148fb66923.png align="center")
 
 ### 把解析丢给 CF -&gt; CDN 加速
 
